@@ -1,0 +1,254 @@
+{
+    "DBInstances": [
+        {
+            "PubliclyAccessible": false, 
+            "MasterUsername": "admin", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "general-public-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-055d1c63cd1dcf4cf"
+                }
+            ], 
+            "InstanceCreateTime": "2021-03-14T02:00:13.404Z", 
+            "CopyTagsToSnapshot": true, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:mysql-8-0"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "mysql", 
+            "MultiAZ": false, 
+            "LatestRestorableTime": "2021-03-17T01:55:00Z", 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.mysql8.0", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": false, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "04:31-05:01", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-0efd870acc294914d", 
+                        "SubnetOutpost": {}, 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1c"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-049c5e4e368e9cda4", 
+                        "SubnetOutpost": {}, 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1d"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "eco-tech-db-subnet-group", 
+                "VpcId": "vpc-038aa2b5d1220e58e", 
+                "DBSubnetGroupDescription": "Assignment 4", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 20, 
+            "DBInstanceArn": "arn:aws:rds:us-east-1:478954525021:db:ecotech-db1", 
+            "BackupRetentionPeriod": 7, 
+            "PreferredMaintenanceWindow": "tue:03:31-tue:04:01", 
+            "Endpoint": {
+                "HostedZoneId": "Z2R2ITUGPM61AM", 
+                "Port": 3306, 
+                "Address": "ecotech-db1.cppeadxnj69d.us-east-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "8.0.20", 
+            "MaxAllocatedStorage": 1000, 
+            "DeletionProtection": false, 
+            "AvailabilityZone": "us-east-1c", 
+            "DomainMemberships": [], 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-Z4MDH2GYEW3UZKJH4FK5DE2PUQ", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "StorageEncrypted": false, 
+            "AssociatedRoles": [], 
+            "DBInstanceClass": "db.t2.micro", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "ecotech-db1"
+        }, 
+        {
+            "PubliclyAccessible": false, 
+            "MasterUsername": "admin", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "general-public-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-0fc8fc62166f66abc"
+                }
+            ], 
+            "InstanceCreateTime": "2021-03-14T21:25:58.751Z", 
+            "CopyTagsToSnapshot": true, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:mysql-8-0"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "mysql", 
+            "MultiAZ": false, 
+            "LatestRestorableTime": "2021-03-17T01:55:00Z", 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.mysql8.0", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": false, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "10:17-10:47", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-053cf5ef30004d1f2", 
+                        "SubnetOutpost": {}, 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1c"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-08ee921f0510c83ab", 
+                        "SubnetOutpost": {}, 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1d"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "neweco-tech-db-subnet-group", 
+                "VpcId": "vpc-04fea44ec1dd25ed1", 
+                "DBSubnetGroupDescription": "private subnet group", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 20, 
+            "DBInstanceArn": "arn:aws:rds:us-east-1:478954525021:db:eco-tech-db-one", 
+            "BackupRetentionPeriod": 7, 
+            "PreferredMaintenanceWindow": "mon:04:12-mon:04:42", 
+            "Endpoint": {
+                "HostedZoneId": "Z2R2ITUGPM61AM", 
+                "Port": 3306, 
+                "Address": "eco-tech-db-one.cppeadxnj69d.us-east-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "8.0.20", 
+            "MaxAllocatedStorage": 1000, 
+            "DeletionProtection": false, 
+            "AvailabilityZone": "us-east-1c", 
+            "DomainMemberships": [], 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-7ALSL7CGPTPPNRQTJTXOVIJ3Q4", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "StorageEncrypted": false, 
+            "AssociatedRoles": [], 
+            "DBInstanceClass": "db.t2.micro", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "eco-tech-db-one"
+        }, 
+        {
+            "PubliclyAccessible": false, 
+            "MasterUsername": "admin", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "general-public-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-088d8ae6f3ee6da2b"
+                }
+            ], 
+            "InstanceCreateTime": "2021-03-17T00:23:34.662Z", 
+            "CopyTagsToSnapshot": true, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:mysql-5-6"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "mysql", 
+            "MultiAZ": false, 
+            "LatestRestorableTime": "2021-03-17T01:55:00Z", 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.mysql5.6", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": false, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "09:43-10:13", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-07768dc7807f8e01b", 
+                        "SubnetOutpost": {}, 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-05d1a0538688fb31c", 
+                        "SubnetOutpost": {}, 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1b"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "midterm-db-subnet-group", 
+                "VpcId": "vpc-0d3ee5facabef1b3a", 
+                "DBSubnetGroupDescription": "midterm private subnets", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 20, 
+            "DBInstanceArn": "arn:aws:rds:us-east-1:478954525021:db:midterm-db", 
+            "BackupRetentionPeriod": 7, 
+            "DBName": "sample", 
+            "PreferredMaintenanceWindow": "sat:03:30-sat:04:00", 
+            "Endpoint": {
+                "HostedZoneId": "Z2R2ITUGPM61AM", 
+                "Port": 3306, 
+                "Address": "midterm-db.cppeadxnj69d.us-east-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "5.6.49", 
+            "MaxAllocatedStorage": 1000, 
+            "DeletionProtection": false, 
+            "AvailabilityZone": "us-east-1b", 
+            "DomainMemberships": [], 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-HOIX3ZP6HE7KTURSNR6QXDV23I", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "StorageEncrypted": false, 
+            "AssociatedRoles": [], 
+            "DBInstanceClass": "db.t2.micro", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "midterm-db"
+        }
+    ]
+}

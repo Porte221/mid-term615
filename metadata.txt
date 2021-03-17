@@ -1,0 +1,4 @@
+ami-0a2d12b5ec2b64a0d
+i-0f55271eaf44a384f
+ip-10-25-2-12.ec2.internal
+midtermweb-sg

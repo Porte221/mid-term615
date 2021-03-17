@@ -1,0 +1,383 @@
+{
+    "RouteTables": [
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-07e55a034975f7dc9", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-0f5bd81c5e4d0c2b7", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-02359e4ef812871cb"
+                }, 
+                {
+                    "SubnetId": "subnet-02b5e80bcb71c43f1", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-004356c13446bc641", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-02359e4ef812871cb"
+                }
+            ], 
+            "RouteTableId": "rtb-02359e4ef812871cb", 
+            "VpcId": "vpc-038aa2b5d1220e58e", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "eco-public-subnet", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.25.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "GatewayId": "igw-08a7b068bedc6d37d", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "State": "active", 
+                    "Origin": "CreateRoute"
+                }
+            ], 
+            "OwnerId": "478954525021"
+        }, 
+        {
+            "Associations": [
+                {
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-91e57de0", 
+                    "Main": true, 
+                    "RouteTableId": "rtb-d5250dab"
+                }
+            ], 
+            "RouteTableId": "rtb-d5250dab", 
+            "VpcId": "vpc-75882508", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "default-main-rtb", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "172.31.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "GatewayId": "igw-b80010c3", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "State": "active", 
+                    "Origin": "CreateRoute"
+                }
+            ], 
+            "OwnerId": "478954525021"
+        }, 
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-08ee921f0510c83ab", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-0ede3a7d15b122b7b", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-0d2dbc20b2d93ba48"
+                }, 
+                {
+                    "SubnetId": "subnet-053cf5ef30004d1f2", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-0b8f6da8b4387e5dc", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-0d2dbc20b2d93ba48"
+                }
+            ], 
+            "RouteTableId": "rtb-0d2dbc20b2d93ba48", 
+            "VpcId": "vpc-04fea44ec1dd25ed1", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "eco-tech-private-route-table", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "VPC", 
+                    "Key": "private-route-table"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.25.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "Origin": "CreateRoute", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "NatGatewayId": "nat-08fc397e48f9e1d80", 
+                    "State": "active"
+                }
+            ], 
+            "OwnerId": "478954525021"
+        }, 
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-0b8a867809e5accc2", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-0a916c10bab76fc2c", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-036635efa74a7e671"
+                }, 
+                {
+                    "SubnetId": "subnet-00b31b3182ccea33c", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-00bc50061cac05e9f", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-036635efa74a7e671"
+                }
+            ], 
+            "RouteTableId": "rtb-036635efa74a7e671", 
+            "VpcId": "vpc-0d3ee5facabef1b3a", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "midterm-rtb-public", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.25.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "GatewayId": "igw-07581e74414e2a8e1", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "State": "active", 
+                    "Origin": "CreateRoute"
+                }
+            ], 
+            "OwnerId": "478954525021"
+        }, 
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-05d1a0538688fb31c", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-0eeffeee136bdb2a6", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-03827a50cbff1cd13"
+                }, 
+                {
+                    "SubnetId": "subnet-07768dc7807f8e01b", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-07156e37f2abe5758", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-03827a50cbff1cd13"
+                }
+            ], 
+            "RouteTableId": "rtb-03827a50cbff1cd13", 
+            "VpcId": "vpc-0d3ee5facabef1b3a", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "midterm-rtb-private", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.25.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "Origin": "CreateRoute", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "NatGatewayId": "nat-09360c03ed9567140", 
+                    "State": "active"
+                }
+            ], 
+            "OwnerId": "478954525021"
+        }, 
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-0efd870acc294914d", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-0dd3c49066b35a76d", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-0e3484bda1ec82772"
+                }, 
+                {
+                    "SubnetId": "subnet-049c5e4e368e9cda4", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-0a4c2917f090cda2a", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-0e3484bda1ec82772"
+                }
+            ], 
+            "RouteTableId": "rtb-0e3484bda1ec82772", 
+            "VpcId": "vpc-038aa2b5d1220e58e", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "eco-techprivate", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.25.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "Origin": "CreateRoute", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "NatGatewayId": "nat-0faf3020e03d3db51", 
+                    "State": "blackhole"
+                }
+            ], 
+            "OwnerId": "478954525021"
+        }, 
+        {
+            "Associations": [
+                {
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-06f1263e2fac7a2fc", 
+                    "Main": true, 
+                    "RouteTableId": "rtb-0c6d287d635b7bfba"
+                }
+            ], 
+            "RouteTableId": "rtb-0c6d287d635b7bfba", 
+            "VpcId": "vpc-0d3ee5facabef1b3a", 
+            "PropagatingVgws": [], 
+            "Tags": [], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.25.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }
+            ], 
+            "OwnerId": "478954525021"
+        }, 
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-07658e67fdc7c9187", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-0450903faa7427ee3", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-06a91dbd062a7b2f8"
+                }, 
+                {
+                    "SubnetId": "subnet-00ab3a6e7debbe622", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-0fe8c6c423a58c395", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-06a91dbd062a7b2f8"
+                }, 
+                {
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-04a644d16ed0526e5", 
+                    "Main": true, 
+                    "RouteTableId": "rtb-06a91dbd062a7b2f8"
+                }
+            ], 
+            "RouteTableId": "rtb-06a91dbd062a7b2f8", 
+            "VpcId": "vpc-04fea44ec1dd25ed1", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "eco-tech-main-rtb-vpc", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.25.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "GatewayId": "igw-09cc66d2e8eb61665", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "State": "active", 
+                    "Origin": "CreateRoute"
+                }
+            ], 
+            "OwnerId": "478954525021"
+        }, 
+        {
+            "Associations": [
+                {
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-0ccd63c63241183bf", 
+                    "Main": true, 
+                    "RouteTableId": "rtb-05c91779e276f1405"
+                }
+            ], 
+            "RouteTableId": "rtb-05c91779e276f1405", 
+            "VpcId": "vpc-038aa2b5d1220e58e", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "main-rtb-vpc", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.25.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }
+            ], 
+            "OwnerId": "478954525021"
+        }
+    ]
+}

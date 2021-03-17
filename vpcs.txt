@@ -1,0 +1,100 @@
+{
+    "Vpcs": [
+        {
+            "VpcId": "vpc-04fea44ec1dd25ed1", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "eco-tech-virtual-private-cloud", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-0c7cbcea7a665178d", 
+                    "CidrBlock": "10.25.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-884e00f2", 
+            "OwnerId": "478954525021", 
+            "CidrBlock": "10.25.0.0/16", 
+            "IsDefault": false
+        }, 
+        {
+            "VpcId": "vpc-0d3ee5facabef1b3a", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "midterm-vpc", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-049794ffe5167b904", 
+                    "CidrBlock": "10.25.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-884e00f2", 
+            "OwnerId": "478954525021", 
+            "CidrBlock": "10.25.0.0/16", 
+            "IsDefault": false
+        }, 
+        {
+            "VpcId": "vpc-75882508", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "Default", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-ff71cf90", 
+                    "CidrBlock": "172.31.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-884e00f2", 
+            "OwnerId": "478954525021", 
+            "CidrBlock": "172.31.0.0/16", 
+            "IsDefault": true
+        }, 
+        {
+            "VpcId": "vpc-038aa2b5d1220e58e", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "ecotech-vpc", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-08cc442f70eb3d354", 
+                    "CidrBlock": "10.25.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-884e00f2", 
+            "OwnerId": "478954525021", 
+            "CidrBlock": "10.25.0.0/16", 
+            "IsDefault": false
+        }
+    ]
+}
