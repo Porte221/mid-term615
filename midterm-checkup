@@ -1,0 +1,11 @@
+#!/bin/bash
+aws ec2 describe-instances > instances.txt
+aws ec2 describe-vpcs > vpcs.txt
+aws ec2 describe-subnets > subnets.txt
+aws ec2 describe-security-groups > sg.txt
+aws ec2 describe-route-tables > rtb.txt
+aws rds describe-db-instances > db.txt
+curl -w '\n' http://169.254.169.254/latest/meta-data/ami-id > metadata.txt
+curl -w '\n' http://169.254.169.254/latest/meta-data/instance-id >> metadata.txt
+curl -w '\n' http://169.254.169.254/latest/meta-data/hostname >> metadata.txt
+curl -w '\n' http://169.254.169.254/latest/meta-data/security-groups >> metadata.txt
